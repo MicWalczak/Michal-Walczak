@@ -1,3 +1,10 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   box-sizing: border-box;
 }
@@ -117,7 +124,7 @@ footer{
 
 .links{
 padding: 10px;
-text-align: ce;
+text-align: center;
 }
 
 i{
@@ -141,10 +148,15 @@ rect{
   height:100%; 
   fill:#777;
 }
-
 #Myself{
   width:60%; 
   border-radius: 100%;
   position: relative;
   left: 100px;
 }
+.aboutMeText{
+  position: relative;
+  top:30%
+}
+
+
