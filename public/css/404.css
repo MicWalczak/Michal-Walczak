@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+button{
+    height: 40px;
+    padding: 0 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgba(#777, 0.5);
+    z-index: 3;
+    color: #111;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+ 
