@@ -55,6 +55,7 @@
       <div class="home" id="home col">
         <div class="homeText">
           <h1>From Code to Creation:</h1>
+          
           <p>My Portfolio of Web Development Work</p>
         </div>
         <div class="homePhoto">
@@ -63,18 +64,20 @@
       </div>
     </div>
 
-      <button class="CV">Dovnload CV</button>
-      <a href="#aboutMe"
-        ><svg class="arrows">
+    <a href="/CV_Walczak+Michał+.pdf" download="Michał Walczak CV"><button class="CV"> Dovnload CV </button></a>
+      <a href="#aboutMe">
+        <svg class="arrows">
           <path class="a1" d="M0 0 L30 32 L60 0"></path>
           <path class="a2" d="M0 20 L30 52 L60 20"></path>
-          <path class="a3" d="M0 40 L30 72 L60 40"></path></svg></a>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg></a>
     </div>
 
     <section class="aboutMe" id="aboutMe">
       <div class="row">
         <div class="col-lg-6 aboutMeText">
           <h2>About Me</h2>
+          <div class="colorLine"></div>
           <p class="aboutlong">Hello, I'm Michał, and welcome to my website. I am a student of IT, and my passion is creating amazing websites that combine functionality with aesthetics. 
             I decided to pursue a career as a web developer because it allows me to combine my passion with work.
             Thank you for visiting my website and I hope I can help you achieve your online goals</p>
@@ -84,27 +87,35 @@
     </section>
 
     <section class="portfolio" id="portfolio">
-      <h2>Design patterns</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nisi
-        repellendus explicabo distinctio cum nemo, iste excepturi? Libero,
-        mollitia suscipit corrupti impedit minus nemo consequatur modi corporis,
-        pariatur sit velit.
-      </p>
+      <h2 class="porttext"> Check out my work </h2>
+      <div class="row">
+        <div class="col-4 portIMG">
+         <div class="color"></div>
+        </div>
+        <div class="col-4 portIMG">
+         <div class="color"></div> 
+        </div>
+        <div class="col-4 portIMG">
+         <div class="color"></div> 
+        </div>
+      </div>
     </section>
+
     <section class="contact" id="contact">
       <h2>Contact Me</h2>
+      <div class="colorLine"></div>
       <p>
         If you are interested in working with me, please see the links below or
         send me an e-mail
       </p>
-
+      <div class="row">
+        <div class="form-group col-6">
       <form
         action="https://formsubmit.co/maikiwebdesign@gmail.com"
         method="POST"
       >
-        <div class="form-group row g-3">
-          <input type="hidden" name="_captcha" value="false" />
+        
+          <input  type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" value="http://localhost:3000/" />
           <input
             type="email"
@@ -132,22 +143,26 @@
             required
           ></textarea>
           <button type="submit" class="btn btn-secondary">Sign in</button>
+          <span class="contactLinks">
+            <a href="https://www.linkedin.com/in/micha%C5%82-walczak-61a22823a/"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://wa.me/48884837792"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </span>
         </div>
       </form>
-      <span>
-        <a href="https://www.linkedin.com/in/micha%C5%82-walczak-61a22823a/"
-          ><i class="fa-brands fa-linkedin-in"></i
-        ></a>
-        <a href="https://wa.me/48884837792"
-          ><i class="fa-brands fa-whatsapp"></i
-        ></a>
-      </span>
+      <div class="col-6">
+      <img class="contactimg" src="/contact.png" />
+      </div>  
+    </div>   
     </section>
-
     <footer>
       Copyright © 2022 Michał Walczak Personal Portfolio Website. All Rights
       Reserved
-    </footer>
+    </footer> 
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
       integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
