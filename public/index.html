@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-md fixed-top">
       <a class="navbar-brand" href="#">Michał Walczak</a>
@@ -39,9 +40,6 @@
             <a class="nav-link text-black-50" href="#aboutMe">/About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black-50" href="#etaps">/Etaps</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link text-black-50" href="#portfolio">/Portfolio</a>
           </li>
           <li class="nav-item">
@@ -50,55 +48,41 @@
         </ul>
       </div>
     </nav>
-    
-    <div class="line-horizont"> </div>
-   
-    <div class="home" id="home">
-      
-      <h1>Welcome to my website.</h1>
-      <p>I'm glad you came here and want to get to know my work</p>
-      <a href="#aboutMe"><svg class="arrows" >
-        <path class="a1" d="M0 0 L30 32 L60 0"></path>
-        <path class="a2" d="M0 20 L30 52 L60 20"></path>
-        <path class="a3" d="M0 40 L30 72 L60 40"></path>
-      </svg></a>
+
+    <div class="line-horizont"></div>
+
+    <div class="row" id="home">
+      <div class="home" id="home col">
+        <div class="homeText">
+          <h1>From Code to Creation:</h1>
+          <p>My Portfolio of Web Development Work</p>
+        </div>
+        <div class="homePhoto">
+          <img class="Myself" src="/IMG_0454v.png" />
+        </div>
+      </div>
+    </div>
+
+      <button class="CV">Dovnload CV</button>
+      <a href="#aboutMe"
+        ><svg class="arrows">
+          <path class="a1" d="M0 0 L30 32 L60 0"></path>
+          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path></svg></a>
     </div>
 
     <section class="aboutMe" id="aboutMe">
       <div class="row">
-      <div class="col-lg-6 aboutMeText">
-      <h2>About Me</h2>
-      <p>I am a 23 year old beginner web developer from Poland. </p>
-    </div>
-    <div class="col-lg-6">
-      <img id="Myself" src="/IMG_0454.png">
-    </div>
-  </div>
-    </section>
-    <section class="etaps" id="etaps">
-      <div class="row">
-        <div class="col-lg-3">
-          <svg class="bd-placeholder-img rounded-circle"><title>step 1</title><rect/></svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <div class="col-lg-6 aboutMeText">
+          <h2>About Me</h2>
+          <p class="aboutlong">Hello, I'm Michał, and welcome to my website. I am a student of IT, and my passion is creating amazing websites that combine functionality with aesthetics. 
+            I decided to pursue a career as a web developer because it allows me to combine my passion with work.
+            Thank you for visiting my website and I hope I can help you achieve your online goals</p>
         </div>
-        <div class="col-lg-3">
-          <svg class="bd-placeholder-img rounded-circle"><title>step 2</title><rect/></svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        </div>
-        <div class="col-lg-3">
-          <svg class="bd-placeholder-img rounded-circle"><title>step 3</title><rect/></svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        </div>
-        <div class="col-lg-3">
-          <svg class="bd-placeholder-img rounded-circle"><title>step 3</title><rect/></svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        </div>
+        <div class="col-lg-6"> <img class="laptop" src="/laptopv.png" /></div>
       </div>
     </section>
+
     <section class="portfolio" id="portfolio">
       <h2>Design patterns</h2>
       <p>
@@ -115,7 +99,10 @@
         send me an e-mail
       </p>
 
-      <form action="https://formsubmit.co/maikiwebdesign@gmail.com" method="POST">
+      <form
+        action="https://formsubmit.co/maikiwebdesign@gmail.com"
+        method="POST"
+      >
         <div class="form-group row g-3">
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" value="http://localhost:3000/" />
@@ -148,13 +135,19 @@
         </div>
       </form>
       <span>
-        <a href="https://www.linkedin.com/in/micha%C5%82-walczak-61a22823a/"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://wa.me/48884837792"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/micha%C5%82-walczak-61a22823a/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://wa.me/48884837792"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
       </span>
     </section>
-    
 
-    <footer>Copyright © 2022 Michał Walczak Personal Portfolio Website. All Rights Reserved</footer>
+    <footer>
+      Copyright © 2022 Michał Walczak Personal Portfolio Website. All Rights
+      Reserved
+    </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
       integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="

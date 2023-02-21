@@ -1,3 +1,4 @@
+/* General */
 *,
 ::before,
 ::after {
@@ -28,23 +29,13 @@ h1 {
   font-size: 25px;
 }
 h2 {
-  font-size: 35px;
+  font-size: 60px;
 }
 p {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 2;
-}
-.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  height: 100vh;
-  color:beige;
-  background: linear-gradient(45deg, rgba(97, 133, 204, 1) 0%, rgba(242, 138, 46, 1) 100%);
 }
 section {
   color: #222;
@@ -58,19 +49,67 @@ section {
   text-align: left;
   margin: 0 auto;
 }
-section:nth-of-type(odd) {
-  background-color: #eee;
-}
-
 nav{
   margin: 5px;
   margin-left: 10px;
-  
+  font-size: 25px;
 }
 .collapse{
   margin-right: 5%;
 }
+/* Home */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  color:beige;
+  background: linear-gradient(45deg, rgba(97, 133, 204, 1) 0%, rgba(242, 138, 46, 1) 100%);
+}
+.homeText{
+  position: absolute;
+width: 822px;
+height: 131px;
+left: 10%;
+top: 30%;
 
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 77px;
+
+color: #FFFFFF;
+}
+.homePhoto{
+  position: absolute;
+width: 717px;
+height: 1070px;
+left: 60%;
+top: 100px;
+}
+.Myself{
+  height: 100%;
+  width: 100%;
+}
+.CV{
+position: absolute;
+width: 350px;
+height:70px;
+margin: auto;
+left: 50%;
+margin-left: -175px;
+bottom: 70px;
+top: 720px;
+background: linear-gradient(45deg,rgba(242, 137, 46, 0.596) 0%, rgba(97, 133, 204, 0.384) 100%);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 15px;
+border: none;
+}
+
+/* ARROW SECTION */
 .arrows {
 	width: 60px;
 	height: 72px;
@@ -79,7 +118,6 @@ nav{
 	margin-left: -30px;
 	bottom: 70px;
 }
-
 .arrows path {
   stroke: beige;
 	fill: transparent;
@@ -87,8 +125,6 @@ nav{
 	animation: arrow 2s infinite;
 	-webkit-animation: arrow 2s infinite; 
 }
-
-
 @keyframes arrow
 {
 0% {opacity:0}
@@ -96,7 +132,6 @@ nav{
 80% {opacity:0}
 100% {opacity:0}
 }
-
 @-webkit-keyframes arrow 
 {
 0% {opacity:0}
@@ -104,73 +139,70 @@ nav{
 80% {opacity:0}
 100% {opacity:0}
 }
-
 .arrows path.a1 {
 	animation-delay:-0.6s;
 	-webkit-animation-delay:-0.6s; 
 }
-
 .arrows path.a2 {
 	animation-delay:-0.3s;
 	-webkit-animation-delay:-0.3s; 
 }
-
 .arrows path.a3 {	
 	animation-delay:0s;
 	-webkit-animation-delay:0s; 
 }
 
-footer{
-  background-color: black;
-  color: #fff;
-  text-align: center;
+/* --------------------------------------------- */
+
+/* About ME */
+
+.aboutMeText{
+  position: relative;
+  top:30%
 }
+.laptop{
+  transform: rotate(7.5deg);
+  width: 750px;
+  height: 720px;
+}
+.aboutlong{
+  font-size: 20px;
+}
+/* Portfolio */
 
 .links{
-padding: 10px;
-text-align: center;
-}
-
-i{
-  font-size: 35px;
-  margin: 10px;
-  color: #111
-}
+  padding: 10px;
+  text-align: center;
+  }
+/* Contact */
 .form-group{
   width: 450px;
 }
 .contact p{
   font-size: 20px;
 }
-.bd-placeholder-img{
-  width: 140px; 
-  height:140px;
-  fill:#777
+i{
+  font-size: 35px;
+  margin: 10px;
+  color: #111
 }
-rect{
-  width:100%; 
-  height:100%; 
-  fill:#777;
-}
-#Myself{
-  width:60%; 
-  border-radius: 100%;
-  position: relative;
-  left: 100px;
-}
-.aboutMeText{
-  position: relative;
-  top:30%
-}
+/* GRAFICK LINE */
+
 .line-horizont {
 	margin: 40px auto 0;
 	width: 80%;
 	position: absolute;
-  top: 20px;
+  top: 25px;
   left: 16%;
   height: 1.2px;
   background-image: linear-gradient(90deg, rgba(0,0,0,1)  0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
   opacity: 75%;
 }
 
+/* -------------------------------------------------------------- */
 
+footer{
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
